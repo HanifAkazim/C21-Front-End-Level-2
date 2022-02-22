@@ -17,7 +17,6 @@ html {
 
 body{
     background-color:#cccccc;
-
 }
 
 .wrapper{
@@ -26,32 +25,83 @@ body{
       max-width: 1795px;
 }
 
+header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgb(0 0 0/6%);
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+ul.main-menu{
+    list-style: none;
+    color: #4e4b4b;
+}
+
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+
+li.menu-item::after{
+    content: " | ";
+    padding-left: 10px;
+    color: #eaeaea;
+}
+
+
+li.menu-item a {
+    color: #4e4b4b;
+    display: inline-block;
+}
+
+
+ul.socials{
+    list-style: none;
+    color: #4e4b4b;
+}
+
+li.social-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+
+li.social-item a {
+    color: #4e4b4b;
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Karla', sans-serif;
     font-style: normal;
     color: #4e4b4b;
     line-height: 1.4;
+    font-weight: normal;
 }
 
 
 h2 {
     font-size: 40px;
     line-height: 1.2;
-
 }
 
 h3 {
     font-size: 16px;
     line-height: 1.4;
-
 }
 
 h4 {
     font-size: 16px;
     line-height: 1.4;
     color: #919291;
-
 }
 
 a {
@@ -61,13 +111,75 @@ a {
     line-height: 1.4;
     color: #ca404f;
     text-decoration: none;
-
 }
 
 button {
     font-family: 'karla', sans-serif;
     font-size: 16px;
-    line-height: 42px;
     color: white;
     background-color: #ca404f;
+    padding: 0 20px;
+    line-height: 42px;
+    border: none;
+    height: 42px;
 } 
+
+main{
+    padding: 0 100px 40px 100px;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recept{
+    width: 1040px;
+    display: flex;
+}
+
+.description{
+    width: 480px;
+    margin-right: 70px;
+}
+
+.description h4{
+    margin-top: 15px;
+}
+
+.description p{
+    margin: 60px 0;
+}
+
+.recept-image img{
+    width: 485px;
+}
+
+.recept-items{
+    width: 485px;
+}
+
+.recept-items .item{
+    display: grid;
+    grid-template-columns: auto 100px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+}
+
+.recept-items .item:hover{
+    background-color: #eaeaea;
+    padding-left: 10px;
+}
+
+.item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
