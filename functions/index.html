@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--hier een link naar de stylesheet, style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hier een link naar script.js -->
+    <script src="js/script.js" defer></script>
+    <!-- waarom gebruiken we hier het attribute defer? _zo wordt het script sneller uitgepakt_ vul je antwoord in op de lijn--->
+</head>
+<body>
+
+    <div>
+        <button onclick="getName('Hanif');">klik op de button</button> 
+        <!-- vul eens je eigen naam in waar nu staat: vul je naam in hier, echt doen!, wat gebeurd er dan? _Hij laat je naam zien__ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p>Klik een paar keer op het plaatje hieronder</p>
+        <img id="hide" onclick="hideMe();" src="images/item-1.png">
+        <!-- Welke functie wordt hierboven aangeroepen? _ze verstoppen de foto__ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <img id="show" onclick="show();" src="images/item-2.png">
+        <!-- Welke functie wordt hierboven aangeroepen? _daarna laten ze hem wel zien__ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+    </div>
+
+    <div>
+        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
+        <!-- wat wordt de content van de p hierboven als ik op de button hieronder klik? ______8________ vul je antwoord in op de lijn-->
+        <button onclick="rekenen(5);">Bereken, klik op mij!</button>
+        <!-- Welke functie wordt hierboven aangeroepen? _____onclick_________ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <!-- wat gebeurd er als je het getal 5 hierboven in een ander getal verandert, probeer dat eens  (refresh wel even je pagina). __komt plus 3 bij_ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? _onclick_ vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er met de tekst in het element p? ___kleur wordt veranderd____ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'orange', '30px');">Klik ook op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? __onclick_____ vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er als ik px vergeet bij 30px (probeer het eens) ___dan veranderd de grootte____ vul je antwoord in op de lijn -->
+    </div>
+    
+</body>
+</html>
